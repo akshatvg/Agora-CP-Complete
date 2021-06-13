@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agora Certificate Program | Day 1 | Login</title>
+
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="flexContainer">
+        <!-- Left pane -->
+        <div class="left-pane">
+            <div class="logo">
+                <img src="assets/agoraLogo.png" id="img-container" />
+            </div>
+            <!-- Login container -->
+            <div>
+                <form action="./index.html" onsubmit="return validate()">
+                    <br />
+                    <input type="text" id="email" placeholder="Email" />
+                    <br />
+                    <input type="password" id="password" placeholder="password" />
+                    <button class="submitButton" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <!-- Right pane -->
+        <div id="right-pane">
+            <div id="circleContainer">
+                <div id="illustrationContainer">
+                    <img id="illustration" src="assets/Video_Conf.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./learn.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

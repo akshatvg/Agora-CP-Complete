@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(204, 98%, 51%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left-pane {
+    background-color: white;
+    width: 20vw;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+    width: 60%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+#img-container {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    font-size: 1.25rem;
+    border: 2px solid #099dfd;
+    border-radius: 5px;
+}
+
+.submitButton {
+    background-color: #099dfd;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+#flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#right-pane {
+    flex: 1;
+    text-align: center;
+}
+
+#circleContainer {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 650px;
+    height: 650px;
+    border-radius: 1000px;
+    background-color: #ffffff4b;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+#illustration {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#illustrationContainer {
+    width: 500px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+.incorrect {
+    border: 2px solid red;
+}
