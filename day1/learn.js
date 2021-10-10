@@ -32,16 +32,16 @@ a.forEach((item, index) => {
 
 a;
 
-a = {
+var obj = {
     name: "Akshat",
     age: 21,
     grades: ["A", "A", "A", "F"],
 };
 
-a.name;
-a.age;
-a.grades;
-a.grades[3];
+obj.name;
+obj.age;
+obj.grades;
+obj.grades[3];
 
 a = "akshatvg23@gmail.com";
 a.length;
