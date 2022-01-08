@@ -1,5 +1,5 @@
 // Create Agora Client
-var client = AgoraRTC.createClient({mode: "rtc", codec: "vp8"});
+var client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
 
 var localTracks = {
     videoTrack: null,
@@ -15,7 +15,7 @@ var localTrackState = {
 var remoteUsers = {};
 
 var options = {
-    appID: "a6af85f840ef43108491705e2315a857",
+    appID: null,
     channel: null,
     uid: null,
     token: null
@@ -25,7 +25,7 @@ var options = {
 $("#join-form").submit(async function (e) {
     e.preventDefault();
     console.log("Form Submit");
-    options.appID = "a6af85f840ef43108491705e2315a857";
+    options.appid = $("#appid").val();
     options.channel = $("#channel").val();
     await join();
 });
@@ -119,7 +119,7 @@ $("#video-btn").click(function () {
 // setEnabled true turns it on and false
 // turns it off.
 async function muteAudio() {
-    if (! localTracks.audioTrack) {
+    if (!localTracks.audioTrack) {
         return;
     }
     await localTracks.audioTrack.setEnabled(false);
@@ -130,7 +130,7 @@ async function muteAudio() {
 }
 
 async function unmuteAudio() {
-    if (! localTracks.audioTrack) {
+    if (!localTracks.audioTrack) {
         return;
     }
     await localTracks.audioTrack.setEnabled(true);
@@ -141,7 +141,7 @@ async function unmuteAudio() {
 }
 
 async function muteVideo() {
-    if (! localTracks.videoTrack) {
+    if (!localTracks.videoTrack) {
         return;
     }
     await localTracks.videoTrack.setEnabled(false);
@@ -152,7 +152,7 @@ async function muteVideo() {
 }
 
 async function unmuteVideo() {
-    if (! localTracks.videoTrack) {
+    if (!localTracks.videoTrack) {
         return;
     }
     await localTracks.videoTrack.setEnabled(true);
